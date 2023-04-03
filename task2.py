@@ -14,4 +14,11 @@ The reciprocal of 2 is 0.5
 The reciprocal of 3 is 0.3333333333333333
 The reciprocal of 4 is 0.25
 """
+
 numbers = [0,1,2,3,4]
+try:
+    for x in numbers:
+        w = 1 / x
+        print(f"the reciprocal of {x} is {w}")
+except Exception as e: 
+    print(f"There was an error: {e}")
