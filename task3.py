@@ -27,9 +27,8 @@ try:
 except:
     print("that is not a number")
 try: 
+    num = float(num)
     square = math.sqrt(num)
     print(f"the square root of {num} is :{square}")
 except:
     print("there is no square root")
-print(num)
-print(square)

@@ -30,8 +30,34 @@ c:16
 The roots are -4.0 and -4.0
 """
 import os
+import math
+import sys
 os.system('cls')
 
 
 print("Enter in the coefficients for a quadratic equation in the format:")
 print("  ax^2 + bx + c = 0")
+while True:
+  a = input("a: ")
+  b = input("b: ")
+  c = input("c: ")
+  try:
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    break
+  except:
+    print("one of the coefficients is not a number")
+try:
+  a = int(a)
+  b = int(b)
+  c = int(c)
+  d = (b**2) - (4*a*c)
+  sol1 = (-b-math.sqrt(d))/(2*a)
+  sol2 = (-b+math.sqrt(d))/(2*a)
+  sol1 = round(sol1,2)
+  sol2 = round(sol2,2)
+  print(f"the roots are: {sol1} and {sol2}")
+except:
+  print("there are no real roots")
+"""x = (-b ± √ (b2 - 4ac) )/2a"""

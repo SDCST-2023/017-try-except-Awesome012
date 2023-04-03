@@ -16,9 +16,9 @@ The reciprocal of 4 is 0.25
 """
 
 numbers = [0,1,2,3,4]
-try:
-    for x in numbers:
+for x in numbers:
+    try:
         w = 1 / x
         print(f"the reciprocal of {x} is {w}")
-except Exception as e: 
-    print(f"There was an error: {e}")
+    except Exception as e: 
+        print(f"There was an error: {e}")
