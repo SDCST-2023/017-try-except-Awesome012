@@ -29,6 +29,6 @@ except:
 try: 
     num = float(num)
     square = math.sqrt(num)
-    print(f"the square root of {num} is :{square}")
+    print(f"the square root of {num} is: {square}")
 except:
     print("there is no square root")
